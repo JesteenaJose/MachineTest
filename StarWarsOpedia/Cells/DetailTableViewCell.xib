@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTableViewCell" rowHeight="510" id="01a-xT-yRn" customClass="DetailTableViewCell" customModule="StarWarsOpedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="618" height="510"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="01a-xT-yRn" id="kRD-dD-xEW">
+                <rect key="frame" x="0.0" y="0.0" width="618" height="510"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h8a-NN-XvM">
+                        <rect key="frame" x="8" y="12" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="YzN-h7-Z74"/>
+                            <constraint firstAttribute="height" constant="50" id="dCy-jG-dIO"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X4Q-A6-oab">
+                        <rect key="frame" x="70" y="12" width="540" height="223.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87U-T1-uHt">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="LAu-5e-0ec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoG-3E-LRa">
+                                <rect key="frame" x="0.0" y="32" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0u-bp-7ZD">
+                                <rect key="frame" x="0.0" y="60.5" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz5-HR-xzw">
+                                <rect key="frame" x="0.0" y="89" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvK-2m-USI">
+                                <rect key="frame" x="0.0" y="117.5" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-qm-PoH">
+                                <rect key="frame" x="0.0" y="146" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-VC-Ryk">
+                                <rect key="frame" x="0.0" y="174.5" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-jg-Dph">
+                                <rect key="frame" x="0.0" y="203" width="540" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X4Q-A6-oab" secondAttribute="bottom" constant="16" id="MXi-Rs-UJB"/>
+                    <constraint firstItem="h8a-NN-XvM" firstAttribute="top" secondItem="kRD-dD-xEW" secondAttribute="top" constant="12" id="cjk-lu-pNu"/>
+                    <constraint firstItem="h8a-NN-XvM" firstAttribute="leading" secondItem="kRD-dD-xEW" secondAttribute="leading" constant="8" id="hb0-rV-bFJ"/>
+                    <constraint firstItem="X4Q-A6-oab" firstAttribute="leading" secondItem="h8a-NN-XvM" secondAttribute="trailing" constant="12" id="iEV-7w-3lh"/>
+                    <constraint firstAttribute="trailing" secondItem="X4Q-A6-oab" secondAttribute="trailing" constant="8" id="k9w-0z-3vh"/>
+                    <constraint firstItem="X4Q-A6-oab" firstAttribute="top" secondItem="kRD-dD-xEW" secondAttribute="top" constant="12" id="win-Lj-xQz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pBL-FS-pp9"/>
+            <connections>
+                <outlet property="addressLabel" destination="Yz5-HR-xzw" id="oe2-KX-bap"/>
+                <outlet property="companyNameLabel" destination="DoG-3E-LRa" id="KYQ-Ua-evA"/>
+                <outlet property="companycatchPhraseLabel" destination="FUc-VC-Ryk" id="LLq-Dq-jt9"/>
+                <outlet property="emailLabel" destination="B0u-bp-7ZD" id="Hbr-nX-Hqt"/>
+                <outlet property="img" destination="h8a-NN-XvM" id="Tnx-Kd-cD7"/>
+                <outlet property="nameLabel" destination="87U-T1-uHt" id="Y0R-zX-Xgc"/>
+                <outlet property="phoneLabel" destination="N6O-qm-PoH" id="Yrm-fA-noN"/>
+                <outlet property="userNameLabel" destination="DoG-3E-LRa" id="nPc-4F-Qe1"/>
+                <outlet property="websiteLabel" destination="hgR-jg-Dph" id="qFO-CP-u2g"/>
+                <outlet property="zipCodeLabel" destination="mvK-2m-USI" id="TYr-b5-xTI"/>
+            </connections>
+            <point key="canvasLocation" x="243.47826086956525" y="279.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

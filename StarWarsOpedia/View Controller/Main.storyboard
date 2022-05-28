@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SLB-Tb-Csm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="CRE-kS-EVo">
+            <objects>
+                <viewController id="35r-uw-1RB" customClass="ListViewController" customModule="StarWarsOpedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YqA-1V-78f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="uNG-zG-1cF">
+                                <rect key="frame" x="16" y="88" width="382" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-l2-4fi">
+                                <rect key="frame" x="16" y="147" width="382" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="35r-uw-1RB" id="IcU-vq-Fbf"/>
+                                    <outlet property="delegate" destination="35r-uw-1RB" id="LFx-12-ULY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5o8-fG-gaU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tMm-l2-4fi" firstAttribute="top" secondItem="uNG-zG-1cF" secondAttribute="bottom" constant="8" id="3yP-Zb-303"/>
+                            <constraint firstItem="5o8-fG-gaU" firstAttribute="trailing" secondItem="tMm-l2-4fi" secondAttribute="trailing" constant="16" id="WjV-Wu-k9u"/>
+                            <constraint firstItem="tMm-l2-4fi" firstAttribute="leading" secondItem="5o8-fG-gaU" secondAttribute="leading" constant="16" id="Xfe-v1-5EV"/>
+                            <constraint firstItem="uNG-zG-1cF" firstAttribute="top" secondItem="5o8-fG-gaU" secondAttribute="top" id="cCM-io-IZE"/>
+                            <constraint firstItem="5o8-fG-gaU" firstAttribute="trailing" secondItem="uNG-zG-1cF" secondAttribute="trailing" constant="16" id="hld-hJ-AO1"/>
+                            <constraint firstItem="uNG-zG-1cF" firstAttribute="leading" secondItem="YqA-1V-78f" secondAttribute="leading" constant="16" id="sDR-gi-QGs"/>
+                            <constraint firstItem="5o8-fG-gaU" firstAttribute="bottom" secondItem="tMm-l2-4fi" secondAttribute="bottom" constant="16" id="tp1-ue-Nfc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gM5-8N-8jF"/>
+                    <connections>
+                        <outlet property="searchBar" destination="uNG-zG-1cF" id="hkD-Eb-Kw4"/>
+                        <outlet property="tableView" destination="tMm-l2-4fi" id="eb4-lM-2O2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUA-Fe-CsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="797.54464285714278"/>
+        </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="ZcX-bd-ufu">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ki2-FW-2ot" customClass="UserDetailViewController" customModule="StarWarsOpedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ew3-M8-r12">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCM-UO-TEr">
+                                <rect key="frame" x="16" y="56" width="382" height="794"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ki2-FW-2ot" id="fN8-v2-v5M"/>
+                                    <outlet property="delegate" destination="ki2-FW-2ot" id="i80-ro-Vbi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e2M-vQ-gAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JCM-UO-TEr" firstAttribute="top" secondItem="e2M-vQ-gAr" secondAttribute="top" constant="12" id="4AY-al-DAJ"/>
+                            <constraint firstItem="e2M-vQ-gAr" firstAttribute="trailing" secondItem="JCM-UO-TEr" secondAttribute="trailing" constant="16" id="Fw4-rS-SQ1"/>
+                            <constraint firstItem="JCM-UO-TEr" firstAttribute="leading" secondItem="e2M-vQ-gAr" secondAttribute="leading" constant="16" id="Vb9-7r-zO2"/>
+                            <constraint firstItem="e2M-vQ-gAr" firstAttribute="bottom" secondItem="JCM-UO-TEr" secondAttribute="bottom" constant="12" id="YXX-jT-N6t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="JCM-UO-TEr" id="3zi-SS-nMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tx-9X-cgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="795"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CM0-vd-Tdr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SLB-Tb-Csm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aPk-D6-0li">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="35r-uw-1RB" kind="relationship" relationship="rootViewController" id="HQv-vg-Vdg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISL-yx-meZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.4782608695652" y="797.54464285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
